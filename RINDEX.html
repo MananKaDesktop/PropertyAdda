@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Website made with help of codingwithharry</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PropertyAdda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="RINDEX.html  ">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Buy</a></li>
+                <li><a class="dropdown-item" href="#">Rent</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Sell</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/ContactUs.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="modal">
+    <!--Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="LoginModalLabel">Login to PropertyAdda</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Keep me loged in</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Get a PropertyAdda account </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputfname1" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="exampleInputFname1" aria-describedby="fnameHelp">
+            <div id="fnameHelp" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputSname1" class="form-label">Second Name</label>
+            <input type="text" class="form-control" id="exampleInputSname1" aria-describedby="snameHelp">
+            <div id="snameHelp" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mobile Number</label>
+            <input type="number" class="form-control" id="exampleInputNumber1" aria-describedby="numberHelp">
+            <div id="numberHelp" class="form-text">We'll never share your Contact details with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+              I want to Buy/Rent a property.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault2">
+              I want to sell my property.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault3">
+              I am an agent.
+            </label>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+          </div>
+          <button type="submit" class="btn btn-primary">SignUp</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="c1.jpg" class="d-block w-100" alt="Image can't be displayed" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Wellcome to PropertyAdda</h2>
+          <p>Now you too can have your dream house.</p>
+          <button class="btn btn-success">Buy</button>
+          <button class="btn btn-warning">Rent</button>
+          <button class="btn btn-danger">Sell</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="c2.jpg" class="d-block w-100" alt="Image can't be displayed" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Second slide label</h2>
+          <p>Live the luxurious life you always wanted to.</p>
+          <button class="btn btn-success">Buy</button>
+          <button class="btn btn-warning">Rent</button>
+          <button class="btn btn-danger">Sell</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="c3.jpg" class="d-block w-100" alt="Image can't be displayed" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Third slide label</h2>
+          <p>Want to sell any propery? Let us know.</p>
+          <button class="btn btn-success">Buy</button>
+          <button class="btn btn-warning">Rent</button>
+          <button class="btn btn-danger">Sell</button>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row mb-2" style="user-select: auto">
+        <div class="col-md-6" style="user-select: auto">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            style="user-select: auto">
+            <div class="col p-4 d-flex flex-column position-static" style="user-select: auto">
+              <strong class="d-inline-block mb-2 text-primary" style="user-select: auto">World</strong>
+              <h3 class="mb-0" style="user-select: auto">Dream Home</h3>
+              <div class="mb-1 text-muted" style="user-select: auto">
+                Buy Now
+              </div>
+              <p class="card-text mb-auto" style="user-select: auto">
+                Living in your dream house will be the best feeling in the
+                world once you started feeling it.
+              </p>
+              <a href="#" class="stretched-link" style="user-select: auto">Read more</a>
+            </div>
+            <div class="col-auto d-none d-lg-block" style="user-select: auto">
+              <img class="bd-placeholder-img" width="200" height="250" src="./t1.avif" alt="Image can't be displayed" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" style="user-select: auto">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            style="user-select: auto">
+            <div class="col p-4 d-flex flex-column position-static" style="user-select: auto">
+              <strong class="d-inline-block mb-2 text-success" style="user-select: auto">Design</strong>
+              <h3 class="mb-0" style="user-select: auto">
+                The office of luxury
+              </h3>
+              <div class="mb-1 text-muted" style="user-select: auto">
+                Buy Now
+              </div>
+              <p class="mb-auto" style="user-select: auto">
+                Your office is your workspace, So make it luxurious with wider
+                and bigger area to work in
+              </p>
+              <a href="#" class="stretched-link" style="user-select: auto">Read more</a>
+            </div>
+            <div class="col-auto d-none d-lg-block" style="user-select: auto">
+              <img class="bd-placeholder-img" width="200" height="250" src="./t2.avif" alt="Image can't be displayed" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row mb-2" style="user-select: auto">
+        <div class="col-md-6" style="user-select: auto">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            style="user-select: auto">
+            <div class="col p-4 d-flex flex-column position-static" style="user-select: auto">
+              <strong class="d-inline-block mb-2 text-primary" style="user-select: auto">World</strong>
+              <h3 class="mb-0" style="user-select: auto">Dream Home</h3>
+              <div class="mb-1 text-muted" style="user-select: auto">
+                Buy Now
+              </div>
+              <p class="card-text mb-auto" style="user-select: auto">
+                Living in your dream house will be the best feeling in the
+                world once you started feeling it.
+              </p>
+              <a href="#" class="stretched-link" style="user-select: auto">Read more</a>
+            </div>
+            <div class="col-auto d-none d-lg-block" style="user-select: auto">
+              <img class="bd-placeholder-img" width="200" height="250" src="./t1.avif" alt="Image can't be displayed" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" style="user-select: auto">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            style="user-select: auto">
+            <div class="col p-4 d-flex flex-column position-static" style="user-select: auto">
+              <strong class="d-inline-block mb-2 text-success" style="user-select: auto">Design</strong>
+              <h3 class="mb-0" style="user-select: auto">
+                The office of luxury
+              </h3>
+              <div class="mb-1 text-muted" style="user-select: auto">
+                Buy Now
+              </div>
+              <p class="mb-auto" style="user-select: auto">
+                Your office is your workspace, So make it luxurious with wider
+                and bigger area to work in
+              </p>
+              <a href="#" class="stretched-link" style="user-select: auto">Read more</a>
+            </div>
+            <div class="col-auto d-none d-lg-block" style="user-select: auto">
+              <img class="bd-placeholder-img" width="200" height="250" src="./t2.avif" alt="Image can't be displayed" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container" style="user-select: auto">
+    <footer class="py-3" style="user-select: auto">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3" style="user-select: auto">
+        <li class="nav-item" style="user-select: auto">
+          <a href="RINDEX.html" class="nav-link px-2 text-muted" style="user-select: auto">Home</a>
+        </li>
+        <li class="nav-item" style="user-select: auto">
+          <a href="#" class="nav-link px-2 text-muted" style="user-select: auto">Channel Partners</a>
+        </li>
+        <li class="nav-item" style="user-select: auto">
+          <a href="#" class="nav-link px-2 text-muted" style="user-select: auto">Terms&Conditionsx</a>
+        </li>
+        <li class="nav-item" style="user-select: auto">
+          <a href="#" class="nav-link px-2 text-muted" style="user-select: auto">FAQs</a>
+        </li>
+        <li class="nav-item" style="user-select: auto">
+          <a href="about.html" class="nav-link px-2 text-muted" style="user-select: auto">About</a>
+        </li>
+      </ul>
+      <p class="text-center text-muted" style="user-select: auto">
+        © 2022 PropertyAdda, Inc
+      </p>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

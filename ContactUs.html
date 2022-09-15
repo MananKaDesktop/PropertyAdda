@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Professional Website made with help of codingwithharry</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">PropertyAdda</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="RINDEX.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/about.html">About </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Buy</a></li>
+                  <li><a class="dropdown-item" href="#">Rent</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sell</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="/Contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="mx-2">
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="modal">
+        <!--Login Modal -->
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="LoginModalLabel">Login to PropertyAdda</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Keep me loged in</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Get a PropertyAdda account </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputfname1" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="exampleInputFname1" aria-describedby="fnameHelp">
+                <div id="fnameHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputSname1" class="form-label">Second Name</label>
+                <input type="text" class="form-control" id="exampleInputSname1" aria-describedby="snameHelp">
+                <div id="snameHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Mobile Number</label>
+                <input type="number" class="form-control" id="exampleInputNumber1" aria-describedby="numberHelp">
+                <div id="numberHelp" class="form-text">We'll never share your Contact details with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  I want to Buy/Rent a property.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  I want to sell my property.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  I am an agent.
+                </label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+              </div>
+              <button type="submit" class="btn btn-primary">SignUp</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    <div class="container">
+        <br>
+      <h2>Contact Us</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Contact Number</label>
+          <input type="number" class="form-control" id="inputNumber" placeholder="+91 12345 67890">
+        </div>
+        <div class="col-md-12">
+            <label for="inputState" class="form-label">Reason to contact</label>
+            <select id="inputState" class="form-select">
+              <option>Select</option>
+              <option>Want to buy/rent a property</option>
+              <optin>Want to sell any property</optin>
+              <option>Found something inappropriate on our site</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exapleFormControlTextarea1">Elaborate your concern</label>
+            <textarea id="exapleFormControlTextarea1"  rows="3" class="form-control"></textarea>
+          </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Keep me signed in
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary ">Sign in</button>
+        </div>
+      </form>
+    </div>
+    <div class="container" style="user-select: auto">
+      <footer class="py-3" style="user-select: auto">
+        <ul
+          class="nav justify-content-center border-bottom pb-3 mb-3"
+          style="user-select: auto"
+        >
+          <li class="nav-item" style="user-select: auto">
+            <a
+              href="RINDEX.html"
+              class="nav-link px-2 text-muted"
+              style="user-select: auto"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item" style="user-select: auto">
+            <a
+              href="#"
+              class="nav-link px-2 text-muted"
+              style="user-select: auto"
+              >Channel Partners</a
+            >
+          </li>
+          <li class="nav-item" style="user-select: auto">
+            <a
+              href="#"
+              class="nav-link px-2 text-muted"
+              style="user-select: auto"
+              >Terms&Conditionsx</a
+            >
+          </li>
+          <li class="nav-item" style="user-select: auto">
+            <a
+              href="#"
+              class="nav-link px-2 text-muted"
+              style="user-select: auto"
+              >FAQs</a
+            >
+          </li>
+          <li class="nav-item" style="user-select: auto">
+            <a
+              href="about.html"
+              class="nav-link px-2 text-muted"
+              style="user-select: auto"
+              >About</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-muted" style="user-select: auto">
+          © 2022 PropertyAdda, Inc
+        </p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
